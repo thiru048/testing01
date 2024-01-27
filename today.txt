@@ -1,0 +1,29 @@
+class Scholarship{
+    private String scholarName;
+    private int scholarAmount;
+    
+    public String getScholarName(){
+        return this.scholarName;
+    }
+    
+    public int getScholarAmount(){
+        return this.scholarAmount;
+    }
+    
+    public void identifyScholarship(double avgM){
+        if(avgM>=90){
+            this.scholarName="APJ Kalam";
+            this.scholarAmount=25000;
+        }
+        else if(avgM>=80){
+            this.scholarName="Nehru";
+            this.scholarAmount=15000;
+        }
+        else{
+            this.scholarName="NA";
+            this.scholarAmount=0;
+        }
+        
+    }
+    
+}
